@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9199be"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.togglebuttongroupdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        tools:ignore="Suspicious0dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#306c6b74"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="世界美景 知多少 ?"
+                android:textColor="#212624"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#54678f"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        tools:ignore="Suspicious0dp">
+
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/group_single_custom_compoundtogglebutton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            app:tbgChildSpacing="auto">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.example.administrator.togglebuttongroupdemo.CustomCompoundToggleButton
+                        android:id="@+id/dutchFlowerFieldCustomCompoundToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        app:tbgBackImage="@drawable/dutch_flower_field2"
+                        app:tbgFrontImage="@drawable/dutch_flower_field3"/>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/dutchFlowerFieldTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2e3031"
+                        android:textSize="18dp"
+                        android:text="荷蘭 花田"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.example.administrator.togglebuttongroupdemo.CustomCompoundToggleButton
+                        android:id="@+id/frenchLavenderGrasslandCustomCompoundToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        app:tbgBackImage="@drawable/french_lavender_grassland2"
+                        app:tbgFrontImage="@drawable/french_lavender_grassland3"/>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/frenchLavenderGrasslandTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2e3031"
+                        android:textSize="18dp"
+                        android:text="法國\n薰衣草草原"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.example.administrator.togglebuttongroupdemo.CustomCompoundToggleButton
+                        android:id="@+id/indiaFlowerValleyNationalParkCustomCompoundToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        app:tbgBackImage="@drawable/india_flower_valley_national_park2"
+                        app:tbgFrontImage="@drawable/india_flower_valley_national_park3"/>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/indiaFlowerValleyNationalParkTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2e3031"
+                        android:textSize="18dp"
+                        android:text="印度\n花谷國家公園"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.example.administrator.togglebuttongroupdemo.CustomCompoundToggleButton
+                        android:id="@+id/japanShibaSakuraCustomCompoundToggleButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        app:tbgBackImage="@drawable/japan_shiba_sakura2"
+                        app:tbgFrontImage="@drawable/japan_shiba_sakura3"/>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/japanShibaSakuraTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#2e3031"
+                        android:textSize="18dp"
+                        android:text="日本 芝櫻丘"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+    </LinearLayout>
+</LinearLayout>
